@@ -1,0 +1,1 @@
+# test_task_dto_with_interface
