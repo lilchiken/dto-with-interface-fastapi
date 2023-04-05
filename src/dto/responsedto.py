@@ -1,5 +1,5 @@
-import requests
-import json
+from requests import Response
+from json import loads
 
 
 class ResponseDTO:
@@ -17,6 +17,7 @@ class ResponseDTO:
     Агрументы:\n
     response -- объект requests.Response
     """
-    def __init__(self, response: requests.Response) -> None:
+
+    def __init__(self, response: Response) -> None:
         self._response_json = response.content
-        self.__dict__ = json.loads(self._response_json)
+        self.__dict__ = loads(self._response_json)
