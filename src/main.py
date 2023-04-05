@@ -25,6 +25,7 @@ def now(
     location: str = Form()
 ) -> JSONResponse:
     """Генерим JSON из форм с main страницы."""
+
     response = response_now(
         token,
         location
@@ -39,6 +40,7 @@ def forecast(
     location: str = Form()
 ) -> JSONResponse:
     """Генерим JSON из форм с main страницы."""
+
     response = response_forecast(
         token,
         days,
@@ -50,4 +52,5 @@ def forecast(
 @app.get('/')
 def main(request: Request):
     """Генерим html при помощи Jinja2."""
+
     return templates.TemplateResponse('index.html', {'request': request})

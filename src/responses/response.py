@@ -12,6 +12,7 @@ def response_now(
     token -- Ваш токен на сайте "api.m3o.com"
     location -- место, на которое мы получаем прогноз погоды
     """
+
     response = requests.post(
         'https://api.m3o.com/v1/weather/Now',
         headers={
@@ -36,6 +37,7 @@ def response_forecast(
     days -- на сколько дней нам нужен прогноз погоды
     location -- место, на которое мы получаем прогноз погоды
     """
+
     response = requests.post(
         'https://api.m3o.com/v1/weather/Forecast',
         headers={
