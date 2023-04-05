@@ -46,7 +46,7 @@ $ source venv/bin/activate
 ## Next Steps
 
 - Connect another API, try changing the JSON objects for your needs. 
-- Add [gunicorn](https://pypi.org/project/gunicorn/) or other web server before production.
+- Add [gunicorn](https://pypi.org/project/gunicorn/) or other web server for improve your skills.
 - Configure permissions in API viewset.
 
 ----
