@@ -41,6 +41,14 @@ $ source venv/bin/activate
 # Load the site at http://127.0.0.1:8000
 ```
 
+### Docker
+
+```
+$ docker build -t dto-with-interface .
+$ docker run -d --name dto-with-interface-container -p 80:80 dto-with-interface
+# Load the site at http://127.0.0.1:80
+```
+
 ----
 
 ## Next Steps
