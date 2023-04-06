@@ -45,7 +45,7 @@ $ source venv/bin/activate
 
 ```
 $ docker pull lilchiken/dto-with-interface
-$ docker run -d --name dto-with-interface-container -p 80:80 dto-with-interface
+$ docker run -d --name dto-with-interface-container -p 80:80 lilchiken/dto-with-interface
 # Load the site at http://localhost:80
 ```
 
